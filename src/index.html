@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifrado César</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form align="center">
-  <p>Pon tu mensaje a cifrar aquí:</p>
-  <input id="mensaje-cifrar" type="text"></input>
-  <input type="button" onclick="cifrar()" value="¡A cifrar!"></ul>
-</form>
-<table>
-<ul>Tu mensaje cifrado es:</ul>
-<li id = 'mensaje-cifrado'></li>
-</table>
+    <div>
+    <p>Ingrese la cantidad de saltos<input type="number" id="saltos"</p>
+    <p>Ingrese el texto a cifrar:<input type="text" id="entrada"</p>
+<input type="button" id="botonentrada" value="A Cifrar" onclick="cifrar(cifrar)">
+</div>
+<div>
+Tu mensaje cifrado es <p id="resultado"></p>
+</div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
   </body>
 </html>
