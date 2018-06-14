@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="style.css" />
     <img src="img/codigo-cesar-fondo.jpg" id="header" />
   </head>
-  <div>
-<input type="button" id="botonentrada" value="Cifrar " onclick="botonC()">
-<input type="button" id="botonentrada" value="Decifrar" onclick="botonD()">
-  </div>
+
+<!-- <input type="button" id="botonentrada" value="Cifrar " onclick="botonC()">
+<input type="button" id="botonentrada" value="Decifrar" onclick="botonD()">-->
+
   <body>
     <div id="cifrado">
-    <p>Ingrese el texto a cifrar:<input type="text" id="entrada"</p>
-    <p>Ingrese la cantidad de saltos<input type="number" id="saltos"</p>
+    <p>Ingrese el texto a cifrar:<input type="text" id="entrada"></p>
+    <p>Ingrese la cantidad de saltos<input type="number" id="saltos"></p>
 
-<input type="button" id="botonentrada" value="A Cifrar" onmouseover="cifrar()">
+<input type="button" id="botonentrada" value="A Cifrar" onclick="cipher.encode(mensajeCifrar.value,saltos.value)">
 </div>
 <div id="cifradoRespuesta">
 Tu mensaje cifrado es <p id="resultado"></p>
