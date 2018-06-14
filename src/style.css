@@ -1,0 +1,36 @@
+*{
+  background-color: #A30303;
+}
+
+
+/*#cifrado,
+#decifrado,
+#cifradoRespuesta,
+#decifradoRespuesta{
+  display: none;*/
+}
+#header{
+width: 1350px;
+height: 500px;
+align-self: center;
+}
+
+#botonentrada1{
+background-color: #732009;
+width: 200px;
+height: 100px;
+font-size: 25px;
+font-family: OldRomanKlein;
+font-color: #1713090;
+margin-left: 200px;
+
+}
+#botonentrada2{
+background-color: #732009;
+width: 200px;
+height: 100px;
+font-size: 25px;
+font-family: OldRomanKlein;
+font-color: #1713090;
+margin-left: 500px;
+}
