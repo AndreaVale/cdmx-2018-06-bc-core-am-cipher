@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Cifrado César</title>
     <link rel="stylesheet" href="style.css" />
+    <img src="img/codigo-cesar-fondo.jpg" id="header" />
   </head>
   <div>
 <input type="button" id="botonentrada" value="Cifrar " onclick="botonC()">
@@ -14,7 +15,7 @@
     <p>Ingrese el texto a cifrar:<input type="text" id="entrada"</p>
     <p>Ingrese la cantidad de saltos<input type="number" id="saltos"</p>
 
-<input type="button" id="botonentrada" value="A Cifrar" onmouseover="cipher(decifrar)">
+<input type="button" id="botonentrada" value="A Cifrar" onmouseover="cifrar()">
 </div>
 <div id="cifradoRespuesta">
 Tu mensaje cifrado es <p id="resultado"></p>
@@ -23,7 +24,7 @@ Tu mensaje cifrado es <p id="resultado"></p>
 
 <p>Ingrese el texto a decifrar:<input type="text" id="entrada2"</p>
 <p>Ingrese la llave para decifrar:<input type="number" id="saltos2"</p>
-<input type="button" id="boton-entrada2" value="¡A Decifrar!" onmouseover="decifrar(this)">
+<input type="button" id="boton-entrada2" value="¡A Decifrar!" onmouseover="decifrar()">
 </div>
 <div>
   <div id="decifradoRespuesta">

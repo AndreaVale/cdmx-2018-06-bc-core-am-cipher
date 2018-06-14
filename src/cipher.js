@@ -3,8 +3,8 @@ function botonC(){
   }
 function cifrar(){
 let mensajeSalida = " ";
-let mensajeCifrar = document.getElementById('entrada').value.toUpperCase();<--van en el index.js
-let saltos = parseInt(document.getElementById('saltos').value); <--va en el index.js
+let mensajeCifrar = document.getElementById('entrada').value.toUpperCase();
+let saltos = parseInt(document.getElementById('saltos').value);
 //console.log('entrada');
 //console.log('saltos');
 for (let i = 0; i < mensajeCifrar.length; i++){
@@ -34,7 +34,7 @@ document.getElementById("resultado").innerHTML=mensajeSalida;
 //toda la función del decifrado
 function botonD(){
   decifrado.style.display="block";}
-function cipher(decifrar){
+function decifrar(){
   //Llamando del HTML al JS
 let mensajeDecifrar = document.getElementById('entrada2').value.toUpperCase();
 let saltosDos = parseInt(document.getElementById('saltos2').value);
