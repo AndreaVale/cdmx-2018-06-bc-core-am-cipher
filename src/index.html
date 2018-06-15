@@ -24,7 +24,7 @@ Tu mensaje cifrado es <p id="resultado"></p>
 
 <p>Ingrese el texto a decifrar:<input type="text" id="entrada2"</p>
 <p>Ingrese la llave para decifrar:<input type="number" id="saltos2"</p>
-<input type="button" id="boton-entrada2" value="¡A Decifrar!" onmouseover="decifrar()">
+<input type="button" id="boton-entrada2" value="¡A Decifrar!" onclick="cipher.decode(mensajeDecifrar.value,saltosDos.value)"></input>
 </div>
 <div>
   <div id="decifradoRespuesta">
