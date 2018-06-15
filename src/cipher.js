@@ -15,10 +15,9 @@ let mensajeEntrada = mensajeCifrar.charCodeAt(i);
 
 if (mensajeEntrada==32) {
   mensajeSalida+=String.fromCharCode(mensajeEntrada);
-  document.getElementById('resultado').innerHTML = mensajeSalida;
+
   console.log(mensajeSalida);
 } else {
-
 
 //console.log(mensajeEntrada);
 let mensajeBueno = (mensajeEntrada-65+saltos)%26+65;
@@ -26,9 +25,10 @@ let mensajeBueno = (mensajeEntrada-65+saltos)%26+65;
 mensajeSalida += String.fromCharCode(mensajeBueno);
 console.log(mensajeSalida);
  //cifradoRespuesta.style.display="block";
-document.getElementById("resultado").innerHTML=mensajeSalida;
+
 }
 }
+return mensajeSalida;
 },
  decode:(mensajeDecifrar,saltosDos)=>{
   //Llamando del HTML al JS
@@ -47,7 +47,7 @@ var mensajePerritos = mensajeDecifrar.charCodeAt(numb);
 
 if (mensajePerritos==32) {
   mensajeSalidaDos+=String.fromCharCode(mensajePerritos);
-  document.getElementById('resultado-dos').innerHTML = mensajeSalidaDos;
+
   //console.log(mensajeSalidaDos);
 } else {
 
@@ -59,9 +59,9 @@ mensajeSalidaDos += String.fromCharCode(mensajeBuenoDos);
 console.log(mensajeSalidaDos);
 //Imprimiendo en pantalla
 //decifradoRespuesta.style.display= "block";
-document.getElementById('resultado-dos').innerHTML=mensajeSalidaDos;
 }
 }
+return mensajeSalidaDos;
 }
 
 };
