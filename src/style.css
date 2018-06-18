@@ -17,14 +17,11 @@ margin: 0px;
 #cifrado{
 font-family: 'Patrick Hand', cursive;
 
-font-size: 29px;
 
   /*margin-top: 10px;*/
   /*background-color:#852e34;*/
 }
-#decifrado{
-  margin-left: 20px;
-}
+
 #compartir{
   display: none;
 }
@@ -37,3 +34,11 @@ font-size: 29px;
   font color: white;
   height: 100px;
 }*/
+#resultado-dos{
+  background-color: #E69C27;
+  font-size: 25px;
+}
+#resultado{
+  background-color: #E69C27;
+  font-size: 25px;
+}

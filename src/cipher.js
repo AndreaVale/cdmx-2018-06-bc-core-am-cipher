@@ -13,7 +13,7 @@ saltos = parseInt(saltos)
 for (let i = 0; i < mensajeCifrar.length; i++){
 let mensajeEntrada = mensajeCifrar.charCodeAt(i);
 
-if (mensajeEntrada==32) {
+if (mensajeEntrada==32|| mensajeEntrada == 165) {
   mensajeSalida+=String.fromCharCode(mensajeEntrada);
 
   console.log(mensajeSalida);
@@ -45,7 +45,7 @@ var mensajePerritos = mensajeDecifrar.charCodeAt(numb);
 //Viendo si efectivamente me sale el mensaje en ASCII
 //console.log(mensajePerritos);
 
-if (mensajePerritos==32) {
+if (mensajePerritos==32 || mensajePerritos == 165) {
   mensajeSalidaDos+=String.fromCharCode(mensajePerritos);
 
   //console.log(mensajeSalidaDos);
