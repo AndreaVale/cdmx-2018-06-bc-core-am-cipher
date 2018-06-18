@@ -3,35 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>Cifrado César</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css" />
-    <img src="img/codigo-cesar-fondo.jpg" id="header" />
+
   </head>
-
-<!-- <input type="button" id="botonentrada" value="Cifrar " onclick="botonC()">
-<input type="button" id="botonentrada" value="Decifrar" onclick="botonD()">-->
-
   <body>
-    <div id="cifrado">
-    <p>Ingrese el texto a cifrar:<input type="text" id="entrada"></p>
-    <p>Ingrese la cantidad de saltos<input type="number" id="saltos"></p>
+    <div id='todo'>
+    <header>
+<div class="col-lg-12" id="cesar">
+  <img src="img/codigo.png" id="header" />
+</div>
+    </header>
+    <div id="cifrado" class="container-fluid">
+      <section class="main row">
+        <div id="uno" class="col-xs-12 col-md-6 col-lg-4">
+    <h3>Ingresa el texto a cifrar:</h3>
+      <p><textarea rows="3" cols="40" id="entrada"></textarea></p>
+    <h5>Ingrese la llave para cifrar:</h5>
+    <p><input type="number" id="saltos"></p>
+<p><input type="button" id="botonentrada" value="¡A Cifrar!"></p>
+<h5> Tu mensaje cifrado es:</h5> <p id="resultado"></p>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4" id="decifrado">
+<h3>Ingresa el texto a decifrar:</h3>
+<p><textarea rows="3" cols="40" id="entrada2"></textarea></p>
+<h5>Ingresa la llave para decifrar:</h5>
+<p><input type="number" id="saltos2"></p>
+<p><input type="button" id="boton-entrada2" value="¡A Decifrar!"></input></p>
+  <p id="decifradoRespuesta"></p>
+  <h5>Hemos decifrado tu mensaje:</h5>
+  <p id="resultado-dos"></p>
 
-<input type="button" id="botonentrada" value="A Cifrar">
-</div>
-<div id="cifradoRespuesta">
-Tu mensaje cifrado es <p id="resultado"></p>
-</div>
-<div id="decifrado">
-
-<p>Ingrese el texto a decifrar:<input type="text" id="entrada2"</p>
-<p>Ingrese la llave para decifrar:<input type="number" id="saltos2"</p>
-<input type="button" id="boton-entrada2" value="¡A Decifrar!" onclick="cipher.decode(mensajeDecifrar.value,saltosDos.value)"></input>
-</div>
-<div>
-  <div id="decifradoRespuesta">
-  Hemos decifrado tu mensaje: <p id="resultado-dos"></p>
   </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+  <div class="col-xs-12 col-md-6 col-lg-4" id="compartir">
+    <h3>¡Comparte con tus amigos!</h3>
+    <small>Manda este código qr a tus amigos para que decifren tu mensaje</small>
+    <img id="qr" src="img/qr.jpg"/>
+  </div>
+</section>
 
-  </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="jquery.js"></script>
+      <script src="cipher.js"></script>
+    <script src="index.js"></script>
+</div>
+</body>
+<footer id="footer" class="col-lg-12">Powered by Trash Panda Studio</footer>
 </html>
